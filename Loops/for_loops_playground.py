@@ -38,17 +38,13 @@
 
 
 # letters = ['a','b','c','d']
-
 # result = ""
-
 # for letter in letters:
 #     result = result + letter
 #     print(result) #indented print so printing again and again until the for loop is complete
 
 # letters = ['a','b','c','d']
-
 # result = ""
-
 # for letter in letters: #remember the variable name (here we used letter) is totally arbitary - can be anything you want
 #     result = result + letter
 # print(result) #printing outside of the 'for loop' so will only print one line

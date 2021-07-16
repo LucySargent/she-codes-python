@@ -1,11 +1,6 @@
-split list items on each row - atm the price is not an item
-
 Ask user how mny units of each item they bought
-
-- print int(input
-
-q1
-answer1  etc - append to list
+multiply item costs with the given user input. 
+use these calculations in a formatted string.
 
 
 

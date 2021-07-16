@@ -39,14 +39,14 @@ chilli_wishlist = ["0 igloo", "1 chicken", "2 donut", "3 box"]
 # chilli_wishlist.insert(1, 'peanuts')
 # print(chilli_wishlist)
 
-### Pop - remove an item
-chilli_wishlist = ["0 igloo", "1 chicken", "2 donut", "3 box"]
-chilli_wishlist.pop(0)
-# chilli_wishlist.pop(1)
-# chilli_wishlist.pop(2)
-# chilli_wishlist.pop(3)
-# chilli_wishlist.pop("0 igloo") #!!! DOES NOT TAKE A STRING
-print(chilli_wishlist)
+# ### Pop - remove an item
+# chilli_wishlist = ["0 igloo", "1 chicken", "2 donut", "3 box"]
+# chilli_wishlist.pop(0)
+# # chilli_wishlist.pop(1)
+# # chilli_wishlist.pop(2)
+# # chilli_wishlist.pop(3)
+# # chilli_wishlist.pop("0 igloo") #!!! DOES NOT TAKE A STRING
+# print(chilli_wishlist)
 
 ### Remove
 # chilli_wishlist = ["0 igloo", "1 chicken", "2 donut", "3 box"]
