@@ -1,23 +1,23 @@
-# chilli_wishlist = ["0 igloo", "1 chicken", "2 donut", "3 box"]
+chilli_wishlist = ["0 igloo", "1 chicken", "2 donut", "3 box"]
 # print(chilli_wishlist)
 # print(len(chilli_wishlist))
 
-### INDEXING
+# ## INDEXING
 
 # print(chilli_wishlist[0])
 # print(chilli_wishlist[1])
 # print(chilli_wishlist[2])
-# print(chilli_wishlist[3])
+# # print(chilli_wishlist[3])
 # print(chilli_wishlist[-1])
-# print(chilli_wishlist[-2])
-# print(chilli_wishlist[-3])
+# # print(chilli_wishlist[-2])
+# # print(chilli_wishlist[-3])
 # print(chilli_wishlist[-0])
-# print(chilli_wishlist[0:1])
-# print(chilli_wishlist[0:2])
+# # print(chilli_wishlist[0:1])
+# # print(chilli_wishlist[0:2])
 # print(chilli_wishlist[0:3])
-# print(chilli_wishlist[0:4])
-# print(chilli_wishlist[1:3])
-# print(chilli_wishlist[2:4])
+# # print(chilli_wishlist[0:4])
+# # print(chilli_wishlist[1:3])
+# # print(chilli_wishlist[2:4])
 
 ### CHANGING ITEMS IN THE LIST - indicate the item position
 # chilli_wishlist[0] = "carrot" 
@@ -30,7 +30,7 @@
 # chilli_wishlist.append("dig mat")
 # print(chilli_wishlist)
 
-### Extend - adds multiple items to the list
+# ### Extend - adds multiple items to the list
 # chilli_wishlist.extend(['kong','ball','crocodile'])
 # print(chilli_wishlist)
 
@@ -40,13 +40,13 @@
 # print(chilli_wishlist)
 
 ### Pop - remove an item
-# chilli_wishlist = ["0 igloo", "1 chicken", "2 donut", "3 box"]
-# chilli_wishlist.pop(0)
+chilli_wishlist = ["0 igloo", "1 chicken", "2 donut", "3 box"]
+chilli_wishlist.pop(0)
 # chilli_wishlist.pop(1)
 # chilli_wishlist.pop(2)
 # chilli_wishlist.pop(3)
 # chilli_wishlist.pop("0 igloo") #!!! DOES NOT TAKE A STRING
-# print(chilli_wishlist)
+print(chilli_wishlist)
 
 ### Remove
 # chilli_wishlist = ["0 igloo", "1 chicken", "2 donut", "3 box"]
@@ -94,12 +94,14 @@
 # print(chilli_wishlist)
 
 # ### SUBLISTS
-chilli_wishlist = [
-    ['igloo'], #bed
-    ['donut', 'ball', 'crocodile'], #toys
-    ['chicken', 'peanut butter'], #food
-    ['walk', 'swim', 'chase'] #activities
-]
+# chilli_wishlist = [
+#     ['igloo'], #bed
+#     ['donut', 'ball', 'crocodile'], #toys
+#     ['chicken', 'peanut butter'], #food
+#     ['walk', 'swim', 'chase'] #activities
+# ]
+# print(len(chilli_wishlist))
+
 # print(chilli_wishlist)
 # print(chilli_wishlist[0])
 # print(chilli_wishlist[1])
@@ -114,7 +116,7 @@ chilli_wishlist = [
 # chilli_wishlist[2].insert(0,'BONE')
 # print(chilli_wishlist[2])
 
-### add another sublist to the list: sit, lie down, stay
-chilli_wishlist.extend([['sit', 'lie down', 'stay']])
-# print(chilli_wishlist)
-print(chilli_wishlist[4])
+# ### add another sublist to the list: sit, lie down, stay
+# chilli_wishlist.extend([['sit', 'lie down', 'stay']])
+# # print(chilli_wishlist)
+# print(chilli_wishlist[4])
