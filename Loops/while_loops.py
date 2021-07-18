@@ -139,6 +139,10 @@
 # print(total)
 # print("")
 
+
+print(f"{item[0]:<20} $  {item[1]:.2f}")
+print(f"{'$':>22} {total:.2f}")
+
 #confused by use of element word in both lists!
 
 # is there a better way to print this reciept? using the f string thing?
