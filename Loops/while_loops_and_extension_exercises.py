@@ -46,15 +46,15 @@
 # print(total)
 
 
-# # user_number = (input("Enter a number: "))
-# # total = 0
-# # # user_number = int(user_number)
-# # Sum = total + int(user_number)
-# # while user_number != "":
-# #     Sum = total + int(user_number)
-# #     user_number = (input("Enter a number: "))
-# #     # user_number = int(user_number)
-# # print(Sum)
+# user_number = (input("Enter a number: "))
+# total = 0
+# # user_number = int(user_number)
+# Sum = total + int(user_number)
+# while user_number != "":
+#     Sum = total + int(user_number)
+#     user_number = (input("Enter a number: "))
+#     # user_number = int(user_number)
+# print(Sum)
 
 # ##############################
 
@@ -143,18 +143,6 @@
 print(f"{item[0]:<20} $  {item[1]:.2f}")
 print(f"{'$':>22} {total:.2f}")
 
-#confused by use of element word in both lists!
-
-# is there a better way to print this reciept? using the f string thing?
-
-# how does it know that x is a thing in the list? e.g. can x be anything at all?
-# fruits = ["apple", "banana", "cherry"]
-# for x in fruits:
-#   print(x)
-
-# How can I use item / element? (see loops exercises - we use both are they like built in variables?)
-# in extension q2, do I need to create a new list for the string?
-# what is a tuple?
 
 #Q2. Ask the user to enter a string. Output the string one character at a time, as well as it’s position in the string
 
@@ -176,11 +164,11 @@ print(f"{'$':>22} {total:.2f}")
 #         print("* ", end="")
 #     print("\n")
 
-digits = [1,2,3,4]
-result = 0
-for d in digits:
-    result = result + d
-    print(result)
+# digits = [1,2,3,4]
+# result = 0
+# for d in digits:
+#     result = result + d
+#     print(result)
 
 
 
