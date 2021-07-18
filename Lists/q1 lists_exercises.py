@@ -1,3 +1,12 @@
+# Given the list of foods below, output:
+# 1. The first item in the list.
+# 2. The third item in the list.
+# 3. The last item in the list.
+# 4. The first three items in the list.
+# 5. The last three items in the list.
+# 6. The last item in the sublist.
+
+
 foods = [
     "orange",
     "apple",
@@ -10,11 +19,12 @@ foods = [
     "mango",
     "kiwifruit"
 ]
-print(len(foods)) #get number of items 10
-print(foods[0]) #get 1st item - orange
-print(foods[2]) #get 3rd item - banana
-print(foods[-1]) #get last item - kiwifruit
-print(foods[0:3]) #get first three items - orange apple banana
-# print(foods #get last three items??? passionfruit, mango, kiwi
-print(foods[6][2]) #get last item in sublist - pumpkin
 
+print(f"The first item in the list is {foods[0]}")    #orange
+print(f"The third item in the list is {foods[2]}")    #banana
+print(f"The last item in the list is {foods[-1]}")    #kiwifruit
+print(f"The first three items in the list are {foods[0:3]}")  #orange apple banana
+print(f"The last three items in the list are {foods[7:10]}")  #passionfruit, mango, kiwi
+print(f"The last item in the sublist is {foods[6][2]}")       #pumpkin
+
+print(f"The list has {len(foods)} items in it")  #gets number of items 10

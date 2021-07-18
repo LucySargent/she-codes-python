@@ -5,4 +5,8 @@ for i in range(n):
     namelist.append(name)
 print(namelist)
 
-
+# OUTPUT
+# Enter a name: izzy
+# Enter a name: archie
+# Enter a name: boston
+# ['izzy', 'archie', 'boston']

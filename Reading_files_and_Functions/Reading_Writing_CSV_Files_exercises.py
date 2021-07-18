@@ -71,7 +71,6 @@ with open("starter\galaxies.csv", mode="r") as csv_file:
     for line in csv_reader:
         space_data.append(line)
 
-
 def min_velocity(velocity):
     min_velocity = 
 def max_velocity(velocity):
