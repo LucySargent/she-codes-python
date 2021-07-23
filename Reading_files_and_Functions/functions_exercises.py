@@ -5,7 +5,8 @@
 #     return convert_f_to_c
 # print(convert_f_to_c(40))
 
-# farenheit to celsius
+###### celsius to fahrenheit
+
 # def convert_c_to_f(temp_in_c):
 #     convert_c_to_f = (temp_in_c * 9/5) +32
 #     return convert_c_to_f

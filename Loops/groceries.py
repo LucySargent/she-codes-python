@@ -12,16 +12,16 @@ expenditure = []
 for element in groceries: 
     value = int(input("How many units of " + element[0] + " did you buy? "))* element[1] 
     expenditure.append([element[0], value]) 
-# print("") 
-# print(expenditure)   
-# print("====Izzy's Food Emporium====")
-# total = 0
-# for newlist in expenditure: 
-#     print(str(newlist[0]) + "\t" + str(newlist[1]))
-#     total = total + newlist[1]   
-# print("============================")
-# print(total)
-# print("")
+ 
+print("====Izzy's Food Emporium====")
+total = 0
+newlist = []
+for newlist in expenditure: 
+    print(str(newlist[0]) + str(newlist[1]))
+    total = total + newlist[1]   
+    print("============================")
+    print(total)
+
 
 
 # print(f"{item[0]:<20} $  {item[1]:.2f}")

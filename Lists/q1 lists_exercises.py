@@ -23,7 +23,10 @@ foods = [
 print(f"The first item in the list is {foods[0]}")    #orange
 print(f"The third item in the list is {foods[2]}")    #banana
 print(f"The last item in the list is {foods[-1]}")    #kiwifruit
-print(f"The first three items in the list are {foods[0:3]}")  #orange apple banana
+for food in range(0,3):
+    print(f"The first three items in the list are {foods[food]}")  #orange apple banana
+
+# print(f"The first three items in the list are {foods[0]} {foods[1]}")  #orange apple banana
 print(f"The last three items in the list are {foods[7:10]}")  #passionfruit, mango, kiwi
 print(f"The last item in the sublist is {foods[6][2]}")       #pumpkin
 
