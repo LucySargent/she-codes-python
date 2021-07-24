@@ -66,7 +66,6 @@
 from datetime import datetime
 iso_string = "2021-07-05T07:00:00+08:00"
 new_date = datetime.strptime(iso_string,"%Y-%m-%dT%H:%M:%S%z")
-print(new_date.strftime("%A" "%d" "%B"
-"%Y"))
+print(new_date.strftime("%A %d %B %Y"))
 
 ## A date formatted like: Weekday Date Month Year e.g. Tuesday 06 July 2021
