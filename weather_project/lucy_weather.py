@@ -54,11 +54,19 @@
 # print(min_value,position)
 
 
-weather_data = [-5, - 2, 4, '6', '8', 10.4, 11.7]
-min_value = float(weather_data[0]) #setting first value as the min so we can compare against it
-index = 0 #setting up the index so we can re-define it later
-for index, element in enumerate(weather_data):  #creating an index for each element
-    if float(element) <= min_value:
-        min_value = float(element)
-        min_position = index
-print(min_value, min_position)
+# weather_data = [-5, - 2, 4, '6', '8', 10.4, 11.7]
+# min_value = float(weather_data[0]) #setting first value as the min so we can compare against it
+# index = 0 #setting up the index so we can re-define it later
+# for index, element in enumerate(weather_data):  #creating an index for each element
+#     if float(element) <= min_value:
+#         min_value = float(element)
+#         min_position = index
+# print(min_value, min_position)
+
+from datetime import datetime
+iso_string = "2021-07-05T07:00:00+08:00"
+new_date = datetime.strptime(iso_string,"%Y-%m-%dT%H:%M:%S%z")
+print(new_date.strftime("%A" "%d" "%B"
+"%Y"))
+
+## A date formatted like: Weekday Date Month Year e.g. Tuesday 06 July 2021
