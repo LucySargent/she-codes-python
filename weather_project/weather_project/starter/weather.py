@@ -17,6 +17,7 @@ def format_temperature(temp):
 
 
 def convert_date(iso_string):
+    #iso_string = "123"
     """Converts and ISO formatted date into a human readable format.
 
     Args:
@@ -28,7 +29,6 @@ def convert_date(iso_string):
     new_date = datetime.strptime(iso_string,"%Y-%m-%dT%H:%M:%S%z")
     return new_date.strftime("%A %d %B %Y")
     
-
 
 def convert_f_to_c(temp_in_farenheit):
     """Converts a temperature from farenheit to celcius.
@@ -76,9 +76,10 @@ def load_data_from_csv(csv_file):
     weather_list = []
     with open(csv_file)as csv_file:
         csv_reader = csv.reader(csv_file, delimiter = ",")
+        #next(csv_reader)
         for index, row in enumerate(csv_reader):
-            if index !=0 and len(row) != 0:  #iow if there's content in the row 
-                weather_list.append([row[0], int(row [1]), int(row[2])])
+            if index != 0 and len(row) != 0:  #iow if there's content in the row 
+                weather_list.append([row[0], int(row[1]), int(row[2])])
     return weather_list
 
     
@@ -129,15 +130,43 @@ def generate_summary(weather_data):
     Returns:
         A string containing the summary information.
     """
-    pass
+
+
+# 5 Day Overview
+#   The lowest temperature will be 9.4°C, and will occur on Friday 02 July 2021.
+#   The highest temperature will be 20.0°C, and will occur on Saturday 03 July 2021.
+#   The average low this week is 12.2°C.
+#   The average high this week is 17.8°C.
 
 
 def generate_daily_summary(weather_data):
-    """Outputs a daily summary for the given weather data.
+    final_summary = ""
+    for x in range(len(weather_data)):
+        min = convert_f_to_c(weather_data[x][1])
+        max = convert_f_to_c(weather_data[x][2])
+        header = f"---- {convert_date(weather_data[x][0])} ----\n"
+        min_summary = f"  Minimum Temperature: {format_temperature(min)}\n"
+        max_summary = f"  Maximum Temperature: {format_temperature(max)}\n\n"
+        final_summary = final_summary + header + min_summary + max_summary
+    return final_summary
 
-    Args:
-        weather_data: A list of lists, where each sublist represents a day of weather data.
-    Returns:
-        A string containing the summary information.
-    """
-    pass
+# a = [
+#         ["2021-07-02T07:00:00+08:00", 49, 67],
+#         ["2021-07-03T07:00:00+08:00", 57, 68],
+#         ["2021-07-04T07:00:00+08:00", 56, 62],
+#         ["2021-07-05T07:00:00+08:00", 55, 61],
+#         ["2021-07-06T07:00:00+08:00", 53, 62]
+# ]
+# print(generate_daily_summary(a))
+
+#     """Outputs a daily summary for the given weather data.
+
+#     Args:
+#         weather_data: A list of lists, where each sublist represents a day of weather data.
+#     Returns:
+#         A string containing the summary information.
+#     """
+
+
+
+
