@@ -1,24 +1,14 @@
-import csv
-from datetime import datetime
-# # L = ['apples', 'bananas', 'oranges']
-# # for idx, val in enumerate(L):
-# #   print("index is %d and value is %s" % (idx, val))
+# L = ['apples', 'bananas', 'oranges']
+# for idx, val in enumerate(L):
+#   print("index is %d and value is %s" % (idx, val))
 
-# # def find_min(weather_data):
-# #     """Calculates the minimum value in a list of numbers.
 
-# #     Args:
-# #         weather_data: A list of numbers.
-# #     Returns:
-# #         The minium value and it's position in the list.
-# #     """
-
-# # def find_min(weather_data):         
-# # xy = [49, 57, 56, 55, 53]
-# # minval = min(xy)
-# # valpos = xy.index(min(xy))
-# # if minval:
-# #     print(minval, valpos)
+# def find_min(weather_data):         
+# xy = [49, 57, 56, 55, 53]
+# minval = min(xy)
+# valpos = xy.index(min(xy))
+# if minval:
+#     print(minval, valpos)
 
 # weather_data = [49, 57, 56, 55, 53]
 # minvalue = min(weather_data)
@@ -26,10 +16,10 @@ from datetime import datetime
 # print(f"{minvalue},{index}")
 
 
-# # weather_data.index(min)
-# # print(min+weather_data.index)
-# # for idx, val in enumerate(weather_data): 
-# # print((idx, val))
+# weather_data.index(min)
+# print(min+weather_data.index)
+# for idx, val in enumerate(weather_data): 
+# print((idx, val))
 
 
 
@@ -103,16 +93,34 @@ from datetime import datetime
     #             weather_list.append([row[0], int(row [1]), int(row[2])])
     # return weather_list
 
-a = [
-        ["2021-07-02T07:00:00+08:00", 49, 67],
-        ["2021-07-03T07:00:00+08:00", 57, 68],
-        ["2021-07-04T07:00:00+08:00", 56, 62],
-        ["2021-07-05T07:00:00+08:00", 55, 61],
-        ["2021-07-06T07:00:00+08:00", 53, 62]
-]
-# for list in a:
-#     for x in list:
-#         print([0]
+# a = [
+#         ["2021-07-02T07:00:00+08:00", 49, 67],
+#         ["2021-07-03T07:00:00+08:00", 57, 68],
+#         ["2021-07-04T07:00:00+08:00", 56, 62],
+#         ["2021-07-05T07:00:00+08:00", 55, 61],
+#         ["2021-07-06T07:00:00+08:00", 53, 62]
+# ]
+# # for list in a:
+# #     for x in list:
+# #         print([0]
 
-# print(a[0][0])
-print(a[:0],a[:4])
+# # print(a[0][0])
+# print(a[:0],a[:4])
+
+# header = ("5 Day Overview")
+# print(header)
+
+weather_data = [
+    ["2021-07-02T07:00:00+08:00", 49, 67],
+    ["2021-07-03T07:00:00+08:00", 57, 68],
+    ["2021-07-04T07:00:00+08:00", 56, 62],
+       ["2021-07-05T07:00:00+08:00", 55, 61],
+    ["2021-07-06T07:00:00+08:00", 53, 62]
+]
+print("hello")
+
+# for x in range(len(weather_data)):
+#     min = min(weather_data[0][1])
+#     if x > min:
+#         min = x
+#         print(min)
