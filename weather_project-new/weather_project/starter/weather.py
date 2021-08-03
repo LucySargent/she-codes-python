@@ -7,6 +7,7 @@ DEGREE_SYBMOL = u"\N{DEGREE SIGN}C"
 def format_temperature(temp):
     """Takes a temperature and returns it in string format with the degrees
         and celcius symbols.
+
     Args:
         temp: A string representing a temperature.
     Returns:
@@ -17,6 +18,7 @@ def format_temperature(temp):
 
 def convert_date(iso_string):
     """Converts and ISO formatted date into a human readable format.
+
     Args:
         iso_string: An ISO date string..
     Returns:
@@ -24,15 +26,16 @@ def convert_date(iso_string):
     """
     new_date = datetime.strptime(iso_string,"%Y-%m-%dT%H:%M:%S%z")
     return new_date.strftime("%A %d %B %Y")
-    
+
 
 def convert_f_to_c(temp_in_farenheit):
-    """Converts a temperature from farenheit to celcius.
+    """Converts an temperature from farenheit to celcius.
+
     Args:
         temp_in_farenheit: float representing a temperature.
     Returns:
         A float representing a temperature in degrees celcius, rounded to 1dp.
-    """  
+    """
     temp_in_farenheit = float(temp_in_farenheit)
     convert_f_to_c = (temp_in_farenheit - 32) *5/9
     convert_f_to_c = round(convert_f_to_c, 1)
@@ -41,6 +44,7 @@ def convert_f_to_c(temp_in_farenheit):
 
 def calculate_mean(weather_data):
     """Calculates the mean value from a list of numbers.
+
     Args:
         weather_data: a list of numbers.
     Returns:
@@ -56,11 +60,12 @@ def calculate_mean(weather_data):
 
 def load_data_from_csv(csv_file):
     """Reads a csv file and stores the data in a list.
+
     Args:
         csv_file: a string representing the file path to a csv file.
     Returns:
         A list of lists, where each sublist is a (non-empty) line in the csv file.
-    """   
+    """
     weather_list = []
     with open(csv_file)as csv_file:
         csv_reader = csv.reader(csv_file, delimiter = ",")
@@ -72,13 +77,12 @@ def load_data_from_csv(csv_file):
 
 def find_min(weather_data):
     """Calculates the minimum value in a list of numbers.
+
     Args:
         weather_data: A list of numbers.
     Returns:
         The minium value and it's position in the list.
     """
-    if len(weather_data)== 0:
-        return ()
     min_value = float(weather_data[0]) #setting first value as the min so we can compare against it
     index = 0
     for index, element in enumerate(weather_data):  #creating an index for each element
@@ -86,10 +90,11 @@ def find_min(weather_data):
             min_value = float(element)
             min_position = index
     return min_value, min_position
-  
+
 
 def find_max(weather_data):
     """Calculates the maximum value in a list of numbers.
+
     Args:
         weather_data: A list of numbers.
     Returns:
@@ -108,6 +113,7 @@ def find_max(weather_data):
 
 def generate_summary(weather_data):
     """Outputs a summary for the given weather data.
+
     Args:
         weather_data: A list of lists, where each sublist represents a day of weather data.
     Returns:
@@ -137,10 +143,11 @@ def generate_summary(weather_data):
 
 def generate_daily_summary(weather_data):
     """Outputs a daily summary for the given weather data.
+
     Args:
-    weather_data: A list of lists, where each sublist represents a day of weather data.
+        weather_data: A list of lists, where each sublist represents a day of weather data.
     Returns:
-    A string containing the summary information.
+        A string containing the summary information.
     """
     final_summary = ""
     for x in range(len(weather_data)):
@@ -151,8 +158,3 @@ def generate_daily_summary(weather_data):
         max_summary = f"  Maximum Temperature: {format_temperature(max)}\n\n"
         final_summary = final_summary + header + min_summary + max_summary
     return final_summary
-
-
-
-
-
