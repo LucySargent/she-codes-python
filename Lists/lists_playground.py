@@ -120,3 +120,80 @@ chilli_wishlist = ["0 igloo", "1 chicken", "2 donut", "3 box"]
 # chilli_wishlist.extend([['sit', 'lie down', 'stay']])
 # # print(chilli_wishlist)
 # print(chilli_wishlist[4])
+
+# fruits = ["banana", "apple", "cherry"]
+# digits = [1,2,3]
+# decimals = [1.12, 12.3]
+# nested = [[1,2,3],["hello"]]
+# print(fruits[0]) 
+# print(fruits[-1]) # last element
+# fruits.append("pineapple") #append is a function so we need the brackets
+# print(fruits) 
+# fruits.pop() #by default function will delete the last item
+# for item in fruits:
+#     print(item)
+
+#nested for loops
+# for item in nested:
+#     print(item)
+#     for i in item:
+#         print(i)
+"""OUTPUT:
+[1, 2, 3]
+1
+2
+3
+['hello']
+hello"""
+
+people = [
+    ["Alice", 25, "pink"],
+    ["Bob", 33, "purple"],
+    ["Ann", 18, "red"]
+]
+
+#pseudo code - helps to work out the logic
+#create an empty list
+#go through list
+#check age of person
+#if age is 20 or older, add person to new list
+
+# vacc = []
+# for person in people:  #this is like 'for row in list'
+#     # for info in person: #can go deeper with this line but didn't need to 
+#     if person[1] >= 20: #index points to the age [1]
+#         vacc.append(person[0]) #index points to the name [0]
+# for person in people:
+#     if person[2] == "pink":
+#         vacc.append(person[0])
+# print(vacc)
+
+
+# vacc = []
+# for person in people:  
+#     for info in person:
+        #try catch
+        # check if item is an integer
+        #or convert item to integer
+        #if int is >= 20
+
+# grid = [
+#   ["X","O","X","O"],
+#   ["X","X","W","X"],
+#   ["X","X","X","O"],  
+#   ["X","X","O","O"],
+# ]
+# #create a var for count
+# #create for loop for each row
+# #create another loop to check each item
+# #check if item is X
+# #increment counter
+
+# for row in grid: 
+#     xcount = 0
+#     for char in row:
+#         if char == "X":
+#             xcount += 1
+#     print(xcount)        
+
+
